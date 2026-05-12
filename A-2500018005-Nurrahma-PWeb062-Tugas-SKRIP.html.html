@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout CSS 3 Kolom</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    /* Header */
+    .header {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Kolom */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 20px;
+      height: 150px;
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    /* Row */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: lightgray;
+      padding: 15px;
+      text-align: center;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Header</h2>
+  </div>
+
+  <div class="row">
+    <div class="column">Sidebar Kiri</div>
+    <div class="column">Konten Tengah</div>
+    <div class="column">Sidebar Kanan</div>
+  </div>
+
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+
+</body>
+</html>
